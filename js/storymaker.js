@@ -28,7 +28,13 @@ var noun2Array = ["goat", "monkey", "fish", "cow", "frog", "bug", "worm"];
 var settingArray = ["on the moon", "on the chair", "in my spaghetti", "in my soup", "on the grass", "in my shoes"];
 
 // Variables for count to grab array elements
-var count;
+var count = {
+    noun1: noun1Array,
+    verb: verbArray,
+    adjective: adjectiveArray,
+    noun2: noun2Array,
+    setting: settingArray
+  };  
 
 /* Functions
 -------------------------------------------------- */
