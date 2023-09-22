@@ -40,7 +40,7 @@ var count = {
 -------------------------------------------------- */
 function noun1_on_click() {
     // variable to get array element and displaying it
-
+    
     // if-else to change count setting
 }
 
