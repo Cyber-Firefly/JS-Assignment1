@@ -102,6 +102,24 @@ function random_on_click() {
     document.getElementById('story').textContent = randomStory; // Display the random story in the #story paragraph
 }
 
+// Add the Reset the user story and display
+function reset_on_click() {
+    // Reset the content of the chosen words and story
+    chooseNoun1.textContent = '';
+    chooseVerb.textContent = '';
+    chooseAdjective.textContent = '';
+    chooseNoun2.textContent = '';
+    chooseSetting.textContent = '';
+    document.getElementById('story').textContent = '';
+
+    // Reset the count variables
+    noun1Count = 0;
+    verbCount = 0;
+    adjectiveCount = 0;
+    noun2Count = 0;
+    settingCount = 0;
+}
+
 /* Event Listeners
 -------------------------------------------------- */
 noun1.addEventListener('click', noun1_on_click);
@@ -111,3 +129,7 @@ noun2.addEventListener('click', noun2_on_click);
 setting.addEventListener('click', setting_on_click);
 showStory.addEventListener('click', playback_on_click);
 randomStory.addEventListener('click', random_on_click);
+
+// add reset button event listener
+const resetStory = document.querySelector("#reset");
+resetStory.addEventListener('click', reset_on_click);
